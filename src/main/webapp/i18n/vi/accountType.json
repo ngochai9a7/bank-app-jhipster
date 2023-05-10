@@ -1,0 +1,26 @@
+{
+  "bankappApp": {
+    "accountType": {
+      "home": {
+        "title": "Account Types",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Thêm mới một Account Type",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Account Type",
+        "notFound": "No Account Types found"
+      },
+      "created": "Một Account Type mới được tạo với định danh {{ param }}",
+      "updated": "Một Account Type cập nhật với định danh {{ param }}",
+      "deleted": "Một Account Type đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Account Type {{ id }}?"
+      },
+      "detail": {
+        "title": "Account Type"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description",
+      "interestRate": "Interest Rate"
+    }
+  }
+}

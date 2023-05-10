@@ -1,0 +1,25 @@
+{
+  "bankappApp": {
+    "loanType": {
+      "home": {
+        "title": "Loan Types",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Thêm mới một Loan Type",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Loan Type",
+        "notFound": "No Loan Types found"
+      },
+      "created": "Một Loan Type mới được tạo với định danh {{ param }}",
+      "updated": "Một Loan Type cập nhật với định danh {{ param }}",
+      "deleted": "Một Loan Type đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Loan Type {{ id }}?"
+      },
+      "detail": {
+        "title": "Loan Type"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description"
+    }
+  }
+}

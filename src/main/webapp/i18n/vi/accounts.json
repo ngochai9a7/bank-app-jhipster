@@ -1,0 +1,30 @@
+{
+  "bankappApp": {
+    "accounts": {
+      "home": {
+        "title": "Accounts",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Thêm mới một Accounts",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Accounts",
+        "notFound": "No Accounts found"
+      },
+      "created": "Một Accounts mới được tạo với định danh {{ param }}",
+      "updated": "Một Accounts cập nhật với định danh {{ param }}",
+      "deleted": "Một Accounts đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Accounts {{ id }}?"
+      },
+      "detail": {
+        "title": "Accounts"
+      },
+      "id": "ID",
+      "openingDate": "Opening Date",
+      "balance": "Balance",
+      "customer": "Customer",
+      "branch": "Branch",
+      "type": "Type",
+      "sender": "Sender",
+      "receiver": "Receiver"
+    }
+  }
+}

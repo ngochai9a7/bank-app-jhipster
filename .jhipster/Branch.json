@@ -1,0 +1,28 @@
+{
+  "applications": "*",
+  "changelogDate": "20230510162403",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "branch",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "address",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "phone",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Branch",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

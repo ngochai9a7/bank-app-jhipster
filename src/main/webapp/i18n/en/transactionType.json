@@ -1,0 +1,24 @@
+{
+  "bankappApp": {
+    "transactionType": {
+      "home": {
+        "title": "Transaction Types",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Transaction Type",
+        "createOrEditLabel": "Create or edit a Transaction Type",
+        "notFound": "No Transaction Types found"
+      },
+      "created": "A new Transaction Type is created with identifier {{ param }}",
+      "updated": "A Transaction Type is updated with identifier {{ param }}",
+      "deleted": "A Transaction Type is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Transaction Type {{ id }}?"
+      },
+      "detail": {
+        "title": "Transaction Type"
+      },
+      "id": "ID",
+      "name": "Name"
+    }
+  }
+}

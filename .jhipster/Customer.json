@@ -1,0 +1,40 @@
+{
+  "applications": "*",
+  "changelogDate": "20230510162402",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "customer",
+  "fields": [
+    {
+      "fieldName": "username",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "passhash",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "phone",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "registrationDate",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Customer",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

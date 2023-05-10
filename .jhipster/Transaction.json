@@ -1,0 +1,43 @@
+{
+  "applications": "*",
+  "changelogDate": "20230510162406",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "transaction",
+  "fields": [
+    {
+      "fieldName": "datetime",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "amount",
+      "fieldType": "BigDecimal"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Transaction",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "name",
+      "otherEntityName": "transactionType",
+      "relationshipName": "type",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "accounts",
+      "otherEntityRelationshipName": "sender",
+      "relationshipName": "from",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "accounts",
+      "otherEntityRelationshipName": "receiver",
+      "relationshipName": "to",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

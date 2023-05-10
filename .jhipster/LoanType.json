@@ -1,0 +1,24 @@
+{
+  "applications": "*",
+  "changelogDate": "20230510162401",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "loan_type",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "LoanType",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

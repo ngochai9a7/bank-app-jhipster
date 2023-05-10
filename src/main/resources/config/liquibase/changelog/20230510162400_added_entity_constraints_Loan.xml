@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity Loan.
+    -->
+    <changeSet id="20230510162400-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="type_id"
+                                 baseTableName="loan"
+                                 constraintName="fk_loan__type_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="loan_type"/>
+
+        <addForeignKeyConstraint baseColumnNames="customer_id"
+                                 baseTableName="loan"
+                                 constraintName="fk_loan__customer_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="customer"/>
+
+        <addForeignKeyConstraint baseColumnNames="branch_id"
+                                 baseTableName="loan"
+                                 constraintName="fk_loan__branch_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="branch"/>
+    </changeSet>
+</databaseChangeLog>

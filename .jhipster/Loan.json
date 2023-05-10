@@ -1,0 +1,39 @@
+{
+  "applications": "*",
+  "changelogDate": "20230510162400",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "loan",
+  "fields": [
+    {
+      "fieldName": "amount",
+      "fieldType": "BigDecimal"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Loan",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "name",
+      "otherEntityName": "loanType",
+      "relationshipName": "type",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityField": "username",
+      "otherEntityName": "customer",
+      "relationshipName": "customer",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityField": "name",
+      "otherEntityName": "branch",
+      "relationshipName": "branch",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

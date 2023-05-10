@@ -1,0 +1,20 @@
+{
+  "applications": "*",
+  "changelogDate": "20230510162407",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "transaction_type",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "TransactionType",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

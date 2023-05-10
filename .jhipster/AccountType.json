@@ -1,0 +1,28 @@
+{
+  "applications": "*",
+  "changelogDate": "20230510162405",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "account_type",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "interestRate",
+      "fieldType": "Float"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "AccountType",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

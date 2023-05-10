@@ -1,0 +1,61 @@
+entity Loan {
+	
+    
+    amount BigDecimal,
+    
+}
+entity LoanType {
+	name String,
+    description String,
+}
+entity Customer {
+	
+    username String,
+    passhash String,
+    name String,
+    phone String,
+    email String,
+    registrationDate LocalDate
+}
+entity Branch {
+	name String,
+    address String,
+    phone String
+}
+entity Accounts {
+	
+    openingDate LocalDate,
+    balance BigDecimal,
+    
+}
+entity AccountType {
+	name String,
+    description String,
+    interestRate Float,
+}
+entity Transaction {
+	
+    datetime LocalDate,
+    amount BigDecimal,
+    
+}
+entity TransactionType {
+	
+    name String,
+}
+
+relationship ManyToOne {
+	Loan{type(name)} to LoanType
+    Loan{customer(username)} to Customer
+    Loan{branch(name)} to Branch
+    Accounts{customer(username)} to Customer
+    Accounts{branch(name)} to Branch
+    Accounts{type(name)} to AccountType
+    Transaction{type(name)} to TransactionType
+    Transaction{from} to Accounts{sender}
+    Transaction{to} to Accounts{receiver}
+    
+}
+
+
+paginate * with pagination

@@ -1,0 +1,26 @@
+{
+  "bankappApp": {
+    "branch": {
+      "home": {
+        "title": "Branches",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Thêm mới một Branch",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Branch",
+        "notFound": "No Branches found"
+      },
+      "created": "Một Branch mới được tạo với định danh {{ param }}",
+      "updated": "Một Branch cập nhật với định danh {{ param }}",
+      "deleted": "Một Branch đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Branch {{ id }}?"
+      },
+      "detail": {
+        "title": "Branch"
+      },
+      "id": "ID",
+      "name": "Name",
+      "address": "Address",
+      "phone": "Phone"
+    }
+  }
+}

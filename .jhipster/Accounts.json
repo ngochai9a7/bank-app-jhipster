@@ -1,0 +1,55 @@
+{
+  "applications": "*",
+  "changelogDate": "20230510162404",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "accounts",
+  "fields": [
+    {
+      "fieldName": "openingDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "balance",
+      "fieldType": "BigDecimal"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Accounts",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "username",
+      "otherEntityName": "customer",
+      "relationshipName": "customer",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityField": "name",
+      "otherEntityName": "branch",
+      "relationshipName": "branch",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityField": "name",
+      "otherEntityName": "accountType",
+      "relationshipName": "type",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "transaction",
+      "otherEntityRelationshipName": "from",
+      "relationshipName": "sender",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "transaction",
+      "otherEntityRelationshipName": "to",
+      "relationshipName": "receiver",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}
