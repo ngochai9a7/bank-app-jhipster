@@ -1,8 +1,11 @@
 package com.ngochai.bankapp.web.rest;
 
+import com.ngochai.bankapp.domain.Accounts;
 import com.ngochai.bankapp.domain.Transaction;
+import com.ngochai.bankapp.repository.AccountsRepository;
 import com.ngochai.bankapp.repository.TransactionRepository;
 import com.ngochai.bankapp.web.rest.errors.BadRequestAlertException;
+import java.math.BigDecimal;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.List;
@@ -39,9 +42,11 @@ public class TransactionResource {
     private String applicationName;
 
     private final TransactionRepository transactionRepository;
+    private final AccountsRepository accountsRepository;
 
-    public TransactionResource(TransactionRepository transactionRepository) {
+    public TransactionResource(TransactionRepository transactionRepository, AccountsRepository accountsRepository) {
         this.transactionRepository = transactionRepository;
+        this.accountsRepository = accountsRepository;
     }
 
     /**
@@ -57,6 +62,13 @@ public class TransactionResource {
         if (transaction.getId() != null) {
             throw new BadRequestAlertException("A new transaction cannot already have an ID", ENTITY_NAME, "idexists");
         }
+        Accounts from = transaction.getFrom();
+        Accounts to = transaction.getTo();
+        BigDecimal amount = transaction.getAmount();
+        from.setBalance(from.getBalance().subtract(amount));
+        to.setBalance(to.getBalance().add(amount));
+        accountsRepository.save(from);
+        accountsRepository.save(to);
         Transaction result = transactionRepository.save(transaction);
         return ResponseEntity
             .created(new URI("/api/transactions/" + result.getId()))
